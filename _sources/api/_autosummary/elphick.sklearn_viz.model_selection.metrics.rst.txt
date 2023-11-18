@@ -1,0 +1,33 @@
+elphick.sklearn\_viz.model\_selection.metrics
+=============================================
+
+.. automodule:: elphick.sklearn_viz.model_selection.metrics
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      mean_error
+      moe_95
+      r2
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
