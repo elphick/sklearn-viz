@@ -48,8 +48,8 @@ def main():
         sys.exit(1)
 
     # Run the commands
-    run_command(f"poetry version {increment}")
-    run_command("poetry install --all-extras")
+    run_command(f"uv version --bump {increment}")
+    run_command("uv sync --all-extras")
 
     run_towncrier()
 
