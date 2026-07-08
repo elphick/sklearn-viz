@@ -130,7 +130,7 @@ class ModelSelection(CrossValidatorBase):
         # define the color map for the scorer
         vmin, vmax = data.min().min(), data.max().max()
         norm = matplotlib.colors.Normalize(vmin=vmin, vmax=vmax)
-        cmap = matplotlib.cm.get_cmap('RdYlGn')
+        cmap = matplotlib.colormaps['RdYlGn']
 
         subtitle: str = f'Cross Validation folds={str(self.cv)}'
         if title is None:

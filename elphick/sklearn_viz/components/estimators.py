@@ -6,7 +6,6 @@ import sklearn
 from sklearn.base import RegressorMixin, BaseEstimator, ClassifierMixin, clone
 from sklearn.exceptions import NotFittedError
 # from sklearn.utils import Tags, TargetTags
-from sklearn.utils._estimator_html_repr import _VisualBlock
 from sklearn.utils.validation import check_is_fitted
 from typing import Union, Optional
 
@@ -103,6 +102,7 @@ class PartitionEstimatorBase(BaseEstimator, ABC):
                         )
 
     def _sk_visual_block_(self):
+        from sklearn.utils._repr_html.estimator import _VisualBlock
         names, estimators = zip(*self.estimators)
         criteria = list(self.partition_defs.values())
         return _VisualBlock("parallel", estimators, names=names, name_details=criteria)

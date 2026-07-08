@@ -1,3 +1,8 @@
+Sklearn_Viz 0.6.13 (2026-07-07)
+===============================
+
+- Fixed _visualblock bug and guarded inside function
+
 Sklearn_Viz 0.6.10 (2025-02-04)
 ===============================
 
